@@ -1,0 +1,48 @@
+body, html {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+
+#mapa { 
+    height: 200px;
+}
+
+.image{
+    width: 9rem;
+    margin: .5rem;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.hover:hover {
+    border: 3px solid red;
+    box-shadow: 1px 1px 4px 1px black;
+  }
+
+image:hover{
+    border: 3px solid red;
+}
+
+.galeria{
+    margin-top: .5rem;
+}
+
+.bordetop{
+    border-top: 2px solid red;
+}
+
+.bordebot{
+    border-bottom: 2px solid red;
+}
+
+.logonavegacion{
+    width: 50px;
+}
+
+.logoFooter-IMG{
+    width: 350px;
+}

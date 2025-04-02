@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/styleIndex.css">
+</head>
+
+<body>
+
+  <!--MENU DE NAVEGACION-->
+
+  <nav class="bordebot navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="text-white">TRANSPUCOR</span><img class="ms-2 logonavegacion"
+          src="./assets/imagenes/LOGONUEVO.png" alt="logotranspucor"></a>
+      <button class="navbar-toggler bg-white text-danger" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="./views/galeria.html">Galeria y Repartos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="../views/portfolio.html">PortFolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contacto y Presupuesto
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./views/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="./views/presupuesto.html">Presupuesto</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./views/privacidad.html">Politica y Privacidad</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--CARROUSEL DE IMAGENES INDEX-->
+
+  <h2 class="text-center mt-3 text-white">ULTIMAS <span class="text-danger">NOTICIAS</span></h2>
+  <div id="carouselExampleCaptions" class="carousel slide col-md-7 d-flex justify-content-center mx-auto mt-4"
+    data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/IMGcontacto/contacto.jpg" class="d-block w-100 mx-auto rounded shadow-lg opacity-50 carrusel-IMG"
+           alt="Imagen Totem" data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="">Totems de Libre Expresion</h5>
+          <p>Tenemos un grupo activo para aprovechar estos Totems de libre expresion y que mejor que poner todo el rato
+            a nuestros queridos Clientes, estuvimos a tope en el evento de champion Burguer.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/imagenes/FERIA.jpeg" class="d-block w-100 mx-auto opacity-50 carrusel-IMG" alt="Imagen Feria"
+          data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FERIA DE CORDOBA</h5>
+          <p>¿Vas a dejar que la gente no conozca tu caseta? Tus precios, tus eventos... Dejanos a nosotros informarles
+            de que estais presentes en este gran evento.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/IMGportfolio/PROYECTOS/proyectos2.jpg" class="d-block w-100 mx-auto opacity-50 carrusel-IMG"
+           alt="BuzoneoIMAGEN" data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Buzoneo: Ver en Galeria.</h5>
+          <p>Somos conscientes de lo mucho que cuesta la publicidad como para desperdiciarla, Tenemos una aplicacion
+            para confirmar con foto y ubicacion que su publicidad acaba en los buzones de los
+            destinatarios. ¿Quereis mas pruebas para confiar en nosotros?.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div id="noticias-container" class="mt-5 text-center text-white"></div>
+
+  <!--ENLACES DIRECTOS HACIA LO QUE HACE LA EMPRESA-->
+
+  <h2 class="text-center mt-4 text-white">SERVICIOS <span class="text-danger">TRANSPUCOR</span></h2>
+  <hr class="border border-danger opacity-100 ms-1">
+
+  <div class="imagen-fondo1">
+
+    <div class="img-oscuro">
+
+      <div class="row g-0 position-relative">
+
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="./assets/imagenes/OFERTASTRANSPUCOR.jpeg" class="w-100 rounded ms-auto card1 servicios-IMG" alt="ofertas">
+        </div>
+
+        <div class="col-md-6 p-4 ps-md-0 text-white">
+          <h3 class="mt-0">Siempre Tenemos Alguna Oferta Que Ofrecer</h3>
+          <p>Ofrecemos ofertas exclusivas no solo de reparto de publicidad, tambien podemos diseñar sus folletos y
+            incluso tenemos convenios con empresas de Impresion.</p>
+          <a href="./views/portfolio.html" class="text-decoration-none text-white btn  bg-danger">Ir
+            Portfolio</a>
+        </div>
+
+      </div>
+
+      <div class="row g-0 bg-body-primary position-relative">
+
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="./assets/imagenes/Claridad.JPG" class="w-100 rounded ms-auto card1 servicios-IMG" alt="imagenclaridad">
+        </div>
+
+        <div class="col-md-6 p-4 ps-md-0 text-white">
+          <h3 class="mt-0">Claridad y Transparencia</h3>
+          <p>Hoy en dia es dificil confiar en las Empresas de publicidad.¿Que haran con los folletos?, os damos la
+            claridad y transparencia de justamente donde acaban. En nuestra
+            galeria de imagenes geolocalizadas.
+          </p>
+          <a href="./views/galeria.html" class="text-decoration-none text-white btn  bg-danger">Ir
+            Galeria</a>
+        </div>
+
+      </div>
+
+      <div class="row g-0 position-relative mb-4">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="./assets/IMGportfolio/PROYECTOS/proyectos4.jpg" class="w-100 rounded ms-auto card1 servicios-IMG" alt="proyectosportfolio">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0 text-white">
+          <h3 class="mt-0">Presupuesto Gratuito</h3>
+          <p>Ademas de nuestro apartado para orientarte de un presupuesto en nuestra WEB, tambien podemos asesorarte de
+            las Zonas de Reparto
+            y el numero de Folletos disponibles segun la cantidad de habitantes en esa Zona para no desperdiciar ni un
+            folleto.
+          </p>
+          <a href="./views/presupuesto.html" class="text-decoration-none text-white btn  bg-danger">Ir
+            Presupuesto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--COMENTARIOS DE GOOGLE-->
+
+  <h2 class="text-center text-white mb-3">COMENTARIOS <span class="text-danger">EMPRESAS</span></h2>
+  <hr class="text-danger opacity-100">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <div class="col">
+      <div class="card d-flex justify-content-center bg-transparent border-0 text-white">
+        <img src="./assets/imagenes/CONFORAMAGOOGLE.png" class="card-img-top pt-3 rounded-circle w-50 mx-auto"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Conforama Cordoba</h5>
+          <p class="card-text text-center">LLevo Trabajando con ellos 5 años, siempre me tienen informado al dia de
+            los pasos de sus repartidores y cumplen las espectativas 100%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card d-flex justify-content-center bg-transparent border-0 text-white">
+        <img src="./assets/imagenes/cashconvertersGOOGLE.jpg" class="card-img-top pt-3 rounded-circle w-50 mx-auto"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Cash Converter</h5>
+          <p class="card-text text-center">Buzoneo perfecto, imagenes detalladas del reparto por ciudad jardin
+            alrededores y zona centro. Un placer trabajar con Antonio.
+            No cambiamos de empresa de publicidad nunca.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card d-flex justify-content-center bg-transparent border-0 text-white">
+        <img src="./assets/IMGportfolio/PROYECTOS/Academia-cruz-conde.jpg"
+          class="card-img-top pt-3 rounded-circle w-50 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Academia Cruz Conde</h5>
+          <p class="card-text text-center">Nos llevan el reparto de publicidad con buzoneo, Colegios y totems, siempre
+            que paso esta nuestro anuncio de la academia puesto, super confiables
+            no los cambiamos por nadie.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card d-flex justify-content-center bg-transparent border-0 text-white mb-3">
+        <img src="./assets/imagenes/IMAGENLIDEL.jpg" class="card-img-top pt-3 rounded-circle w-50 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">LiDL Cordoba</h5>
+          <p class="card-text text-center">Azahara y Antonio nos hicieron el presupuesto y nos marcaron los dias de
+            reparto, todo nos llego al instante y teniamos los repartidores
+            geolocalizados, es un gusto trabajar asi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--QUIENES SOMOS-->
+
+  <h2 class="text-center mt-4 text-white">COMO <span class="text-danger">ENCONTRARNOS</span></h2>
+  <hr class="border border-danger opacity-100 ms-1">
+
+  <div class="imagen-fondo1">
+
+    <div class="img-oscuro">
+
+      <div class="row g-0 bg-body-primary position-relative">
+
+        <div class="col-lg-6 col-md-12 p-lg-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.153619736884!2d-4.775651140489445!3d37.88008997685847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d20823f3a5397%3A0x6731dd85a351bb0c!2sC.%20Lucano%2C%201%2C%20Centro%2C%2014003%20C%C3%B3rdoba!5e0!3m2!1ses!2ses!4v1741865053660!5m2!1ses!2ses"
+            width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="cuadroMapa col-lg-6 col-md-12 p-4 text-white text-center">
+          <h3 class="mt-4 text-center mb-4">DONDE NOS ENCONTRAMOS</h3>
+          
+          
+          <p class="ms-3 text-center">Hoy en dia es dificil confiar en las Empresas de publicidad.¿Que haran con los folletos?, os damos la
+            claridad y transparencia de justamente donde acaban. En nuestra
+            galeria de imagenes geolocalizadas.
+          </p>
+          
+          <p class="ms-3 text-center">Telefono: 641510600</p>
+          <p class="ms-3 text-center">Direccion: Calle de la seguidilla N3 4ºB</p>
+          <p class="ms-3 text-center">Codigo Postal: 14005</p>
+          <p class="ms-3 text-center">Ciudad: Cordoba</p>
+          <a href="./views/contacto.html" class="text-decoration-none text-white btn bg-danger ms-3 text-center">Contacta Con Nosotros</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--FOOTER-->
+
+  <div class="bordetop row bg-dark text-white">
+    <div class="col-lg-3 mt-5 mb-5">
+      <h1 class="ms-3"><img class="ms-2 logoFooter-IMG" src="./assets/imagenes/LOGOFOOTER.png" alt="logofooter"></h1>
+    </div>
+    <div class="col-lg-3 mt-4">
+      <h3 class="ms-3 mb-3 fw-bold">LINKS</h3>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/galeria.html">Galeria y Repartos</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/portfolio.html">PortFolio</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/presupuesto.html">Presupuesto</a></div>
+    </div>
+    <div class="col-lg-3 mt-4">
+      <h3 class="ms-3 fw-bold">REDES</h3>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="https://www.facebook.com/people/Transpucor-Transportes-y-Publicidad-de-C%C3%B3rdoba/100047210667150/">Facebook</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="https://www.instagram.com/">Instagram</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="https://x.com/?lang=es">Twitter</a></div>
+    </div>
+    <div class="col-lg-3 mt-4">
+      <h3 class="ms-3 fw-bold">CONTACTO Y PRIVACIDAD</h3>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/contacto.html">Contacto</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/privacidad.html">Privacidad</a></div>
+      <div><a class="text-decoration-none text-secondary link-danger ms-5" href="./views/privacidad.html">Terminos y Condiciones</a></div>
+    </div>
+    <hr class="border border-danger mt-4 ms-1 opacity-100">
+    <h2 class="text-danger text-center"><span class="text-white me-3">&copy;</span>- Derechos reservados Transpucor S.L</h2>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

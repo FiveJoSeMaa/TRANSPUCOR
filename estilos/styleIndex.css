@@ -1,0 +1,81 @@
+body, html {
+    overflow-x: hidden;
+}
+  
+
+body{
+    background-color: black;
+}
+
+.cuadroMapa{
+    background-color: rgba(0, 0 ,0 , 0.8);
+    padding: 30px;
+    border-radius: 10px; 
+    margin-top: 50px;
+    height:650px;
+    width: 800px;
+    
+}
+
+.carousel{
+    border: 1px solid red;
+    box-shadow: 1px 5px 8px 1px #ff0000;
+}
+
+.imagen-fondo1{
+    background-image: url(../assets/imagenes/Captura1.JPG);
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.img-oscuro{
+    background-color: rgba(0, 0 ,0 , 0.6);
+    z-index: 3;
+}
+
+.bordetop{
+    border-top: 2px solid red;
+}
+
+.bordebot{
+    border-bottom: 2px solid red;
+}
+
+.card1{
+    border: 4px solid rgb(230, 93, 93);
+}
+
+.noticia {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.fecha {
+    font-size: 14px;
+    color: gray;
+}
+.contenido {
+    margin-top: 10px;
+}
+
+.logonavegacion{
+    width: 50px;
+}
+
+.carrusel-IMG{
+    height: 600px;
+}
+
+.servicios-IMG{
+    height: 350px;
+}
+
+.logoFooter-IMG{
+    width: 350px;
+}

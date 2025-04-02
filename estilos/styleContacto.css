@@ -1,0 +1,132 @@
+
+/*----- ESTILOS DEL FORMULARIO -------*/
+body, html {
+    overflow-x: hidden;
+}
+
+
+.formulario{
+    position: relative;
+    float: right;
+}
+
+.formulario h1 {
+    color: red;
+    margin-right: 370px;
+    font-size: 80px;
+    font-style: italic;
+    letter-spacing: 7px;
+    margin-top: 100px;
+}
+
+.formulario h1 #logo {
+    width: 100px;
+    margin-bottom: 58px;
+    margin-left: 15px;
+    
+    
+    
+}
+
+.formulario div #nombre {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #correo {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #tlfn {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #apellidos {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #pais {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #direccion {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+.formulario div #mensaje {
+    width: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.formulario #check {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.formulario #enviar {
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255, 147, 147);
+    color: rgb(0, 0, 0);
+    border-color: rgb(255, 0, 0);
+    font-size: 17px;
+    border-radius: 10px;
+}
+.imgformulario img {
+    height: 900px;
+    width: 1000px;
+}
+
+/*COLOR FORMULARIO*/
+
+input{
+    border: 1px solid #555;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+.formulario.success input{
+    /*border-color: green;*/
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.formulario.error input{
+    border: 2px solid red;
+}
+
+
+.bordetop{
+    border-top: 2px solid red;
+}
+
+.bordebot{
+    border-bottom: 2px solid red;
+}
+
+#mapa{
+    height: 650px;
+}
+
+.logonavegacion{
+    width: 50px;
+}
+
+.logoFooter-IMG{
+    width: 350px;
+}

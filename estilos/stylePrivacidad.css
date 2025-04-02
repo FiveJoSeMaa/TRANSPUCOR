@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+.bordebot {
+    border-bottom: 2px solid red;
+}
+
+.bordetop{
+    border-top: 2px solid red;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.logoFooter-IMG{
+    width: 350px;
+}
+
+.logonavegacion{
+    width: 50px;
+}

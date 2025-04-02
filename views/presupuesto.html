@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSPUCOR</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/stylePresupuesto.css">
+</head>
+<body>
+    
+  <nav class="bordebot navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><span class="text-white">TRANSPUCOR</span><img class="ms-2 logonavegacion"
+          src="../assets/imagenes/LOGONUEVO.png" alt="logonavegacion"></a>
+      <button class="navbar-toggler bg-white text-danger" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="../views/galeria.html">Galeria y Repartos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="../views/portfolio.html">PortFolio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Contacto y Presupuesto
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../views/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="../views/presupuesto.html">Presupuesto</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="../views/privacidad.html">Politica y Privacidad</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--PRESUPUESTO WEB-->
+  <div class="caja-presupuesto">
+    <h1 class="colorido text-center mt-3 mb-3 col-lg-12">Presupuesto Personalizado</h1>
+    <hr class="border opacity-100 border-danger">
+    
+    <form id="presupuestoForm" class="text-center col-lg-12">
+        <!-- Producto -->
+        <label for="producto" class="colorido fs-4">PRODUCTO</label>
+        
+        <select id="producto" name="producto" onchange="calcularPresupuesto()" class="barras col-lg-9">
+            <option value="producto1" class="barras text-center">REPARTO FLAYERS MINIMO 6000 (€350)</option>
+            <option value="producto2" class="barras text-center">TOTEMS MINIMO 4 (€50)</option>
+            <option value="producto3" class="barras text-center">COLEGIOS MINIMO 4 (€50)</option>
+        </select>
+        <hr class="border opacity-100 border-danger col-lg-12">
+
+        <!-- Plazo -->
+        <label for="plazo" class="colorido fs-4">PLAZO (meses):</label>
+        
+        <input type="number" id="plazo" name="plazo" min="1" onchange="calcularPresupuesto()" class="barras col-lg-8" required>
+        <br><hr class="border opacity-100 border-danger col-lg-12">
+
+        <!-- Extras -->
+        <label class="colorido fs-4">Extras:</label>
+        <br>
+        <input type="checkbox" name="extras" value="extra1" onchange="calcularPresupuesto()"> BUZONEO (+€150)
+        <br>
+        <input type="checkbox" name="extras" value="extra2" onchange="calcularPresupuesto()"> TOTEM EXTRA (+€10)
+        <br>
+        <input type="checkbox" name="extras" value="extra3" onchange="calcularPresupuesto()"> COLEGIO EXTRA (+€10)
+        <br><br>
+
+        <!-- Presupuesto Final -->
+        <p id="presupuestoFinal">Presupuesto Final: €0.00</p>
+        <br>
+
+        <!-- Condiciones de privacidad -->
+        <input type="checkbox" id="aceptar"> Acepto las condiciones de privacidad
+        <br>
+        <input type="checkbox" required> He rellenado el formulario de Contacto, TRANSPUCOR S.L tiene mis datos de contacto para confirmar mi identidad.
+        <span id="errorCondiciones" class="error" style="display:none;">Debes aceptar las condiciones para enviar el formulario.</span>
+        <br><br>
+        
+        <!-- Enviar -->
+        <button type="submit" id="enviarBtn" onclick="calcularPresupuesto()">Enviar presupuesto</button>
+        <button type="reset">Restablecer formulario</button>
+      </form>
+    </div>
+    <!--FOOTER WEB-->
+
+    <div class="bordetop row bg-dark text-white">
+      <div class="col-lg-3 mt-5 mb-5">
+        <h1 class="ms-3 text-white"><img class="ms-2 logoFooter-IMG" src="../assets/imagenes/LOGOFOOTER.png" alt="logofooter"></h1>
+      </div>
+
+      <div class="col-lg-3 mt-4">
+        <h3 class="links1 mb-3 text-white fw-bold">LINKS</h3>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/galeria.html">Galeria y Repartos</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/portfolio.html">PortFolio</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/presupuesto.html">Presupuesto</a></div>
+      </div>
+
+      <div class="col-lg-3 mt-4">
+        <h3 class="links1 text-white fw-bold">REDES</h3>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="https://www.facebook.com/people/Transpucor-Transportes-y-Publicidad-de-C%C3%B3rdoba/100047210667150/">Facebook</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="https://www.instagram.com/">Instagram</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="https://x.com/?lang=es">Twitter</a></div>
+      </div>
+
+      <div class="col-lg-3 mt-4">
+        <h3 class="links1 text-white fw-bold">CONTACTO Y PRIVACIDAD</h3>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/contacto.html">Contacto</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/privacidad.html">Privacidad</a></div>
+        <div class="decoracion"><a class="text-decoration-none text-secondary link-danger ms-5" href="../views/privacidad.html">Terminos y Condiciones</a></div>
+      </div>
+
+      <hr class="border border-danger mt-4 ms-1 opacity-100">
+
+      <h2 class="text-danger text-center"> &copy; Derechos Reservados Transpucor S.L</h2>
+    </div>
+
+    
+    <script src="../scripts/presupuesto.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/formulario.js"></script>
+</body>
+</html>
